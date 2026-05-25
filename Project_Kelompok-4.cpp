@@ -6,6 +6,7 @@ Kelompok 4 : Nadhir Rifqi       (123250019)
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
+#include <string>
 using namespace std;
 
 struct Kapal {
@@ -110,6 +111,7 @@ void inputData() {
         cout << "Nama Kontainer   : "; getline(cin, temp[i].nama_kontainer);
         cout << "Jenis Kontainer  : "; getline(cin, temp[i].jenis_kontainer);
         cout << "Berat (Ton)      : "; cin >> temp[i].berat_ton;
+        cin.ignore();
     }
 
     char simpan;
@@ -374,7 +376,8 @@ void bubbleSort() {
     for (int i = 0; i < jumlahData; i++) cout << (i + 1) << ". " << listData[i].nama_kapal << " | " << listData[i].berat_ton << " Ton" << endl;
 
     if (konfirmasiSimpan()) {
-        string fBaru; cout << "Nama file baru : "; cin >> fBaru;
+        string fBaru; 
+        cout << "Nama file baru : "; cin >> fBaru;
         tulisFile(fBaru);
         catatanFile(fBaru);
         cout << "Berhasil! Data disimpan di " << fBaru << "\n";
@@ -413,7 +416,8 @@ void selectionSort() {
     for (int i = 0; i < jumlahData; i++) cout << (i + 1) << ". " << listData[i].nama_kapal << " | " << listData[i].berat_ton << " Ton\n";
 
     if (konfirmasiSimpan()) {
-        string fBaru; cout << "Nama file baru : "; cin >> fBaru;
+        string fBaru; 
+        cout << "Nama file baru : "; cin >> fBaru;
         tulisFile(fBaru);
         catatanFile(fBaru);
         cout << "Berhasil! Data disimpan di " << fBaru << "\n";
@@ -594,7 +598,7 @@ int main() {
     char balik;
 
     do {
-		system("cls");
+        system("cls");
         cout << "\n===== MANAGEMENT SYSTEM KAPAL KARGO & CONTAINER =====\n";
         cout << "1. INPUT DATA\n2. TAMPILKAN DATA\n3. DAFTAR FILE\n4. SEARCHING\n5. SORTING\n6. OPERASI FILE\n7. EXIT\n";
         cout << "Pilihan: "; 
@@ -644,7 +648,7 @@ int main() {
                 break;
 
             case 7:
-                cout << "\n>>>>> Terima kasih telah menggunakan program ini! <<<<<";
+                cout << "\n>>>>> Terima kasih telah menggunakan program ini! <<<<<\n";
                 return 0;
 
             default :   
@@ -655,6 +659,6 @@ int main() {
          }
     } while (balik == 'y' || balik == 'Y');
 
-    cout << "\n>>>>> Terima kasih telah menggunakan program ini! <<<<<";
+    cout << "\n>>>>> Terima kasih telah menggunakan program ini! <<<<<\n";
     return 0;
 }

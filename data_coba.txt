@@ -1,0 +1,50 @@
+12
+Bintang Laut
+Mega Kargo
+Dry
+15
+34
+Samudera Jaya
+Pacific Freight
+Reefer
+22
+56
+Elang Perkasa
+Nusantara Pack
+Tank
+18.5
+78
+Arus Deras
+Global Express
+Flatrack
+25
+90
+Putera Fajar
+Indo Logistik
+OpenTop
+12
+23
+Bahari Makmur
+Atlantic Cargo
+Dry
+30
+45
+Nusantara Satu
+Trans Ocean
+Reefer
+27.5
+67
+pertamina
+Orion Freight
+Tank
+14
+89
+Garuda Mas
+Sentosa Logistik
+Flatrack
+19.5
+11
+Wijaya Kusuma
+Matrix Express
+Dry
+31.7
